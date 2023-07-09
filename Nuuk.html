@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuuk Webapp</title>
+    <link rel="stylesheet" type="text/css" herf="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .bannercrd{
+            max-width: 100%;
+            height: auto;
+        }
+        .navigation{
+         padding: 10px 60px;
+         background-color: #fff;
+         display: flex;
+         align-items:center;
+         justify-content: space-between;
+         position: absolute;
+         top: 5%;
+         padding: 5px;
+        }
+        .navigation a{
+            justify-content: space-between;
+               width: 150px;
+         font-size: 15px;
+         height: 150px;
+        }
+        .navigation button{
+            width: 150px;
+         font-size: 32px;
+         height: 150px;
+         background-color: pink;
+        }
+        .logo{
+            max-width: 100%;
+            height: auto;  
+            display: flex;
+            position: absolute;
+         top: 30%;
+         padding: 20px;
+         font-size: 50px;
+        }
+        .text{
+            position: absolute;
+         top: 45%;
+         padding: 20px;
+         font-size: 20px;  
+        }  
+        .btn{
+            position: absolute;
+         top: 60%;
+         padding: 20px;
+         font-size: 10px; 
+         background-color: pink; 
+        }
+        .footer {
+            background-color: rgb(119, 29, 6);
+            padding: 60px 16%;
+            color:white
+          
+         }
+         .footer-col ul li a{
+            color: whitesmoke;
+         }
+         .row{
+            display: flex;
+            flex-wrap: wrap;
+         }
+         .footer-col{
+           width: 30%;
+           padding:0 20px;
+         }
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         .btn button{
+            background-color: dark pink;
+            height:50%;
+         }
+         .head{
+            position: absolute;
+         top: 200%;
+         padding: 20px;
+         font-size: 30px;  
+         }
+         .para{
+            position: absolute;
+         top: 220%;
+         padding: 20px;
+         font-size: 20px;   
+         }
+         .paras{
+            position: absolute;
+         top: 220%;
+         padding: 20px;
+         font-size: 20px;  
+         color: silver;
+         display: flex;
+            flex-wrap: wrap;
+            right: -40%; 
+         }
+         .card {
+            width: 39%;
+            background-color: #fff;
+            display: inline-block;
+            margin: 5px 5px 5px 5px;
+            box-sizing: border-box;
+
+          }
+          .img2 {
+            height: 90px;
+            width: 60%;
+            top:210%;
+          }
+          .img2 img {
+            width: 100% ;
+            height: 100%;
+            border-top-left-radius:5px;
+            border-top-right-radius:5px;
+          }
+          .tex {
+            padding: 10px 24px ;
+            text-overflow: ellipsis;
+          }
+          .tittle h1 {
+            font-size: 10px;
+            text-align: left;
+            margin: 0;
+            font-weight: 400%;
+            
+          }
+          .date {
+            padding-top: 4px;
+          }
+          .span1 {
+            color: #0096ff;
+            font-weight: 600;
+            font-size: 14px;
+            font-style: italic;
+            padding-right:4px ;
+            
+          }
+          .span2 {
+            border-left: 2px solid black;
+          }
+          .span3 {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 14px;
+            font-weight: 300;
+            padding-left: 4px;
+          }
+          .par {
+            margin: 4px 0 ;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.6);
+            line-height: 1.43;
+            text-overflow:ellipsis;
+
+          }
+          .para1{
+            position: absolute;
+
+          }
+          .img_dog{
+        
+            width: 50%;
+            float: left;  
+          }
+          .card1{
+            width: 20%;
+            background-color: #fff;
+            display:inline-block;
+            margin: 5px 5px 5px 5px;
+            box-sizing: border-box;
+          }
+          
+          .text {
+            padding: 10px 24px ;
+            text-overflow: ellipsis;
+            top: 360%;
+            color: rgb(247, 61, 92);
+          }
+          .tittlee h1 {
+            font-size: 18px;
+            text-align: left;
+            margin: 0;
+            font-weight: 600;
+          }
+          .logo1{
+             max-width: 100%;
+            height: auto;  
+            display: flex;
+            position: absolute;
+         top: 378%;
+         padding: 20px;
+         font-size: 20px;
+         display: flexbox;
+         display: ;
+          }
+    .butt{
+
+            padding: 90px 90px;
+            width: 1200px;
+            color: #0084ff;
+            margin: 5px;
+            cursor: pointer;
+            background-color: rgb(243, 34, 69);
+            margin-top: 1400px;
+           
+    
+    }
+    .but{
+        color: white;
+           
+            font-size : 40px; 
+            width: 100%;
+             height: 100px;
+             text-align: center;
+    }
+    .buttt{
+        color: silver;
+        font-size : 20px; 
+        text-align: center;
+    }
+    .last-logo{
+        max-width: 100%;
+            height: auto;
+            background-color: rgb(167, 4, 31);  
+            padding: 80px 70px;  
+            width: 1200px;
+            justify-content: space-between;
+            display: flex;
+            color: white;
+    }
+    .footer1 {
+            background-color: navy;;
+            padding: 60px 16%;
+            color:white
+            
+           
+        
+         }
+         .footer1-col1 ul li a{
+            color: whitesmoke;
+            display: inline-block;
+            position:flex;
+         }
+         .row1{
+            position:flex;
+            flex-wrap: wrap;
+           
+         }
+         .footer1-col1{
+           width: 30%;
+           padding:0 15px;
+         }
+         ul{
+            list-style: none;
+         }
+         .footer1-col-h4{
+            font-size: 18px;
+            color: antiquewhite;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+         }
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         } 
+         .box{
+            padding: 0px;
+            margin:0px;
+         }
+         {
+            @media(max-width:400px);
+         }
+        
+         .box{
+            padding: 0px;
+            margin:0px;
+            display: flex;
+            flex-direction: column-reverse;
+
+         }
+         .flex-container{
+            width: 100%;
+            height:auto;
+           text-align: center;
+           line-height: 200px;
+         }
+         .flex-box{
+            width:150px;
+            height:150px;
+            background-color: pink;
+            
+         }
+  
+    </style>
+</head>
+<body>
+    
+    <HEADER>
+        <div class="row box">
+        <div class="banner card">
+            <img src="slide-2.jpg">
+        
+    <nav class="navigation"><button>NUUK</button>
+        
+            <a herf="#">HOME</a>
+            <a herf="#">PROJECT</a>
+            <a herf="#">ABOUT</a>
+            <a herf="#">SERVICES</a>
+            <a herf="#">BLOGS</a>
+            <a herf="#">PAGES^</a>
+        
+        <div class="felx-container">
+         <div class="flex-box">GET FREE QUOTE
+
+         </div> 
+    </div>
+    </br>
+        
+    </nav>
+</div>
+         <h1 class="logo">YOUR DREAM.<span>WE CREATS.</span></h1>
+         <button class="btn">GET FREE QUOTE</button>
+        
+</div>
+</dev>
+
+</HEADER>
+</body>
+<footer class="footer">
+    <div class="container">
+     <div class="row">
+          <div class="footer-col">
+             <h4><img src="phone.svg" height="30" weight="30"></h4>
+             <ul>
+                 <li><a href="#">PHONE NUMBER</a></li>
+                 <li><a href="#">1-800-506-266</a></li>
+                 <li><a href="#">1-100-777-800</a></li>
+             </ul>
+             <h4><img src="phone.svg" height="30" weight="30"></h4>
+             <ul>
+                 <li><a href="#">CONTACT</a></li>
+                 <li><a href="#">contact@nuuk.com</a></li>
+                 <li><a href="#">info@nuuk.com</a></li>
+             </ul>
+             <h4><img src="phone.svg" height="30" weight="30"></h4>
+             <ul>
+                 <li><a href="#">OPENING TIMES</a></li>
+                 <li><a href="#">Mon - Sat 8:00 - 17:30, Sunday - Closed</a></li>
+                 <li><a href="#">FIND ON MAP</a></li>
+             </ul>
+        
+       
+         </div>
+</footer>
+
+<h2 class="head">OUR SPECIALIZATION</h2>
+</br>
+             
+             <div class="card">
+                <div class="img2">
+                    <img src="brickwall.svg"height="60"weight="60" >
+                </div>
+               <div class="tex">
+                <div class="title">
+                    <h1><b>RENOVATION</b></h1>
+                </div>
+                <div class="par">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</br></br>LEARN MORE</p>
+                </div>
+               </div>
+            </div>
+            <div class="card">
+                <div class="img2">
+                    <img src="set-square.svg"height="60"weight="60" >
+                </div>
+               <div class="tex">
+                <div class="title">
+                    <h1><b>ARCHITECTURE</b></h1>
+                </div>
+                <div class="par">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</br></br>LEARN MORE</p>
+                </div>
+               </div>
+            </div>
+            <div class="card">
+                <div class="img2">
+                    <img src="toolbox.svg"height="60"weight="60" >
+                </div>
+               <div class="tex">
+                <div class="title">
+                    <h1><b>CONSTRUCTION</b></h1>
+                </div>
+                <div class="par">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</br></br>LEARN MORE
+
+                    </p>
+                </div>
+               </div>
+            </div>
+            <div class="card">
+                <div class="img2">
+                    <img src="paint-roller.svg"height="60"weight="60" >
+                </div>
+               <div class="tex">
+                <div class="title">
+                    <h1><b>FINANCIAL RESULTS</b></h1>
+                </div>
+                <div class="par">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</br></br>LEARN MORE
+
+                    </p>
+                </div>
+               </div>
+            </div>
+            <div class="para1">
+                <img class="img_dog" src="serv-1.jpg">
+                
+                <h1>WHO WE ARE</h1></br>
+                <p>Based on collective work and shared knowledge, Nuuk aims to favor dialogue and debate, to transform individual knowledge into increased creative potential.
+
+                </br></br>Our studio is a architecture practice based in NY and Paris. Today, it includes 150 architects, urban planners, landscape and interior designers of 25 different nationalities. The company principle of Architecture-Studio is the collective conception. From the very beginning, the practice has believed in the virtues of exchange, crossing ideas, common effort, shred knowledge.</p>
+                    
+            </div>
+            </div>
+                </div>
+                <div class="card1">
+                   <div class="text">
+                    <div class="titlee">
+                        <h1><b>170</b></h1>
+                    </div>
+                    <div class="par">
+                        <p>Employer with over 10</br> years of experience
+    
+                        </p>
+                    </div>
+                   </div>
+                </div>
+                <div class="card1">
+                    <div class="text">
+                     <div class="titlee">
+                         <h1><b>10</b></h1>
+                     </div>
+                     <div class="par">
+                         <p>Years experience in</br> construction industries
+     
+                         </p>
+                     </div>
+                    </div>
+                 </div>
+                 <div class="card1">
+                    <div class="text">
+                     <div class="titlee">
+                         <h1><b>690</b></h1>
+                     </div>
+                     <div class="par">
+                         <p>Residential premises</br> completed in 2019
+     
+                         </p>
+                     </div>
+                    </div>
+                 </div>
+                 <div class="card1">
+                    <div class="text">
+                     <div class="titlee">
+                         <h1><b>7.1</b></h1>
+                     </div>
+                     <div class="par">
+                         <p>Milion dollar value on </br>investments
+     
+                         </p>
+                     </div>
+                    </div>
+                 </div>
+                 
+            <div class="logo1">
+                <div class="img3">
+
+                
+                <h1>OUR WORK</h1>
+                <img src="p-1.jpg" height="350"weight="350">
+                <img src="p-4.jpg" height="350"weight="350">
+                <img src="p-3.jpg" height="350"weight="350">
+                <img src="p-6.jpg" height="350"weight="350">
+                <img src="p-5.jpg" height="350"weight="350">
+                <img src="p-2.jpg" height="350"weight="350">
+                
+            </div>
+            </div>  
+            <div class="butt">
+                
+               <h1 class="but">LET'S MAKE SOMETHING GREAT TOGETHER </h1>
+              <h2 class="buttt">Get in touch with us and send some basic info for a quick quote.</h2> 
+            </div>  
+<button class="last-logo">
+           <b> <a herf="#">TRUSTED BY TOP COMPANIES</a></b>
+           <b> <a herf="#">LOGO1</a></b>
+           <b> <a herf="#">LOGO2</a></b>
+           <b> <a herf="#">LOGO3</a></b>
+           <b> <a herf="#">LOGO4</a></b>
+           <b> <a herf="#">LOGO5</a></b>
+        </button>
+        <footer class="footer1">
+            <div class="container1">
+             <div class="row1">
+                  <div class="footer1-col1">
+                     <h4>ABOUT NUUK</h4>
+                     <ul>
+                         <li><a href="#">Based on collective work and shared knowledge, Nuuk aims to favor dialogue and debate, to transform individual knowledge into increased creative potential</a></li>
+                         
+                     </ul>
+                    </br>
+                     <h4>SERVICES</h4>
+                     <ul>
+                         <li><a href="#">FINANCIAL RESULTS</a></li>
+                         <li><a href="#">CONSTRUCTION</a></li>
+                         <li><a href="#">ARCHITECTURE</a></li>
+                         <li><a href="#">RENOVATION</a></li>
+                     </ul></br>
+                     <h4>CONTACT US</h4>
+                     <ul>
+                         <li><a href="#">PHONE NUMBER</a></li>
+                         <li><a href="#">1-800-506-266</a></li></br>
+                         <li><a href="#">OPENING TIMES</a></li>
+                         <li><a href="#">Mon - Sat 8:00 - 17:30, Sunday - Closed</a></li></br>
+                         <li><a href="#"> CONTACT</a></li>
+                         <li><a href="#">contact@nuuk.com</a></li>
+                         
+                        
+                     </ul>
+                
+               
+                 </div>
+        </footer>      
+    </div>
+        
+</html>
